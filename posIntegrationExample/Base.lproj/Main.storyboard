@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5J-9h-cvy">
+                                <rect key="frame" x="235" y="68" width="129" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="RESET SALE"/>
+                                <connections>
+                                    <action selector="tappedResetSaleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfm-or-qSH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-EV-vWN">
+                                <rect key="frame" x="229" y="151" width="142" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="ADD AN ITEM"/>
+                                <connections>
+                                    <action selector="tappedAddItemButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CK1-Tk-C3k"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-uA-8VM">
+                                <rect key="frame" x="113" y="258" width="374" height="41"/>
+                                <animations/>
+                                <string key="text">In the Belly Merchant app log in as an admin and 
+attempt to pair with the code 1928</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o5J-9h-cvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4le-Z5-KhO"/>
+                            <constraint firstItem="gVx-uA-8VM" firstAttribute="top" secondItem="ttr-EV-vWN" secondAttribute="bottom" constant="67" id="HvU-FM-X6Y"/>
+                            <constraint firstItem="ttr-EV-vWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfL-PF-5oN"/>
+                            <constraint firstItem="gVx-uA-8VM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SYs-7h-dUZ"/>
+                            <constraint firstItem="ttr-EV-vWN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="XHz-m2-OhC"/>
+                            <constraint firstItem="o5J-9h-cvy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="ifB-AM-1vA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="642"/>
+        </scene>
+    </scenes>
+</document>

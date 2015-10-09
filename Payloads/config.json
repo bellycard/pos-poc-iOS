@@ -1,0 +1,10 @@
+{
+  "config" : {
+    "cashier_name" : "Sean",
+    "register_name" : "A Register",
+    "enableLoyalty" : 0,
+    "outlet_name" : "An Outlet",
+    "retailer_name" : "The Best Store Ever",
+    "displayRetailPriceTaxInclusive" : 1
+  }
+}
