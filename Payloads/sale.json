@@ -1,0 +1,40 @@
+{
+  "sale" : {
+    "id" : "some-uuid-for-this-sale",
+    "sale_discount" : "",
+    "register_sale_products" : [
+      {
+        "loyalty_value" : 0,
+        "quantity" : 1,
+        "sequence" : "2",
+        "sale_product_original_price" : "2.37",
+        "handle" : "precisionproduct",
+        "sale_product_discount" : "",
+        "sale_product_new_price" : "2.37",
+        "variants_string" : "",
+        "name" : "precision product"
+      }
+    ],
+    "total" : 2.37,
+    "balance" : 2.37,
+    "sale_discount_amount" : 0,
+    "subtotal" : 2.06,
+    "total_tax" : 0.31,
+    "taxes" : [
+      {
+        "id" : "some uuid for a tax",
+        "removable" : true,
+        "name" : "New GST Tax",
+        "total" : 0.30855,
+        "rate" : 0.15
+      }
+    ],
+    "sendReceipt" : 0,
+    "register_sale_payments" : [
+
+    ],
+    "payment_total" : 0,
+    "status" : "OPEN",
+    "recipient_email" : ""
+  }
+}
