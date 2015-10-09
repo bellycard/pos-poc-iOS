@@ -10,6 +10,8 @@
  Category extension for `NSScanner` to deal with scanning the headers used by DTBonjour
  */
 
+@import Foundation;
+
 @interface NSScanner (DTBonjour)
 
 /**
