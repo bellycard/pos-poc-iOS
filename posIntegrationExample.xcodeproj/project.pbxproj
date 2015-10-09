@@ -16,11 +16,11 @@
 		3D6E4DC41BBB08DF00C21833 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC01BBB08DF00C21833 /* config.json */; settings = {ASSET_TAGS = (); }; };
 		3D6E4DC61BBB08DF00C21833 /* pairing.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC21BBB08DF00C21833 /* pairing.json */; settings = {ASSET_TAGS = (); }; };
 		3D6E4DC71BBB08DF00C21833 /* sale.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC31BBB08DF00C21833 /* sale.json */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DD11BBB09BD00C21833 /* DTBonjourDataChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DCA1BBB09BD00C21833 /* DTBonjourDataChunk.m */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DD21BBB09BD00C21833 /* DTBonjourDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DCC1BBB09BD00C21833 /* DTBonjourDataConnection.m */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DD31BBB09BD00C21833 /* DTBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DCE1BBB09BD00C21833 /* DTBonjourServer.m */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DD41BBB09BD00C21833 /* NSScanner+DTBonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DD01BBB09BD00C21833 /* NSScanner+DTBonjour.m */; settings = {ASSET_TAGS = (); }; };
 		3D6E4DD71BBB09F300C21833 /* BELBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DD61BBB09F300C21833 /* BELBonjourServer.m */; settings = {ASSET_TAGS = (); }; };
+		3DEFAAD71BC855E6003BCAAE /* DTBonjourDataChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD01BC855E6003BCAAE /* DTBonjourDataChunk.m */; settings = {ASSET_TAGS = (); }; };
+		3DEFAAD81BC855E6003BCAAE /* DTBonjourDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD21BC855E6003BCAAE /* DTBonjourDataConnection.m */; settings = {ASSET_TAGS = (); }; };
+		3DEFAAD91BC855E6003BCAAE /* DTBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD41BC855E6003BCAAE /* DTBonjourServer.m */; settings = {ASSET_TAGS = (); }; };
+		3DEFAADA1BC855E6003BCAAE /* NSScanner+DTBonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD61BC855E6003BCAAE /* NSScanner+DTBonjour.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,16 +37,16 @@
 		3D6E4DC01BBB08DF00C21833 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		3D6E4DC21BBB08DF00C21833 /* pairing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pairing.json; sourceTree = "<group>"; };
 		3D6E4DC31BBB08DF00C21833 /* sale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sale.json; sourceTree = "<group>"; };
-		3D6E4DC91BBB09BD00C21833 /* DTBonjourDataChunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBonjourDataChunk.h; sourceTree = "<group>"; };
-		3D6E4DCA1BBB09BD00C21833 /* DTBonjourDataChunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBonjourDataChunk.m; sourceTree = "<group>"; };
-		3D6E4DCB1BBB09BD00C21833 /* DTBonjourDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBonjourDataConnection.h; sourceTree = "<group>"; };
-		3D6E4DCC1BBB09BD00C21833 /* DTBonjourDataConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBonjourDataConnection.m; sourceTree = "<group>"; };
-		3D6E4DCD1BBB09BD00C21833 /* DTBonjourServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBonjourServer.h; sourceTree = "<group>"; };
-		3D6E4DCE1BBB09BD00C21833 /* DTBonjourServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBonjourServer.m; sourceTree = "<group>"; };
-		3D6E4DCF1BBB09BD00C21833 /* NSScanner+DTBonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScanner+DTBonjour.h"; sourceTree = "<group>"; };
-		3D6E4DD01BBB09BD00C21833 /* NSScanner+DTBonjour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+DTBonjour.m"; sourceTree = "<group>"; };
 		3D6E4DD51BBB09F300C21833 /* BELBonjourServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELBonjourServer.h; sourceTree = "<group>"; };
 		3D6E4DD61BBB09F300C21833 /* BELBonjourServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BELBonjourServer.m; sourceTree = "<group>"; };
+		3DEFAACF1BC855E6003BCAAE /* DTBonjourDataChunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBonjourDataChunk.h; sourceTree = "<group>"; };
+		3DEFAAD01BC855E6003BCAAE /* DTBonjourDataChunk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBonjourDataChunk.m; sourceTree = "<group>"; };
+		3DEFAAD11BC855E6003BCAAE /* DTBonjourDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBonjourDataConnection.h; sourceTree = "<group>"; };
+		3DEFAAD21BC855E6003BCAAE /* DTBonjourDataConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBonjourDataConnection.m; sourceTree = "<group>"; };
+		3DEFAAD31BC855E6003BCAAE /* DTBonjourServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTBonjourServer.h; sourceTree = "<group>"; };
+		3DEFAAD41BC855E6003BCAAE /* DTBonjourServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTBonjourServer.m; sourceTree = "<group>"; };
+		3DEFAAD51BC855E6003BCAAE /* NSScanner+DTBonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScanner+DTBonjour.h"; sourceTree = "<group>"; };
+		3DEFAAD61BC855E6003BCAAE /* NSScanner+DTBonjour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+DTBonjour.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			children = (
 				3D6E4D9B1BBB089500C21833 /* posIntegrationExample */,
 				3D6E4DBF1BBB08DF00C21833 /* Payloads */,
-				3D6E4DC81BBB09BD00C21833 /* DTBonjour */,
+				3DEFAACE1BC855E6003BCAAE /* DTBonjour */,
 				3D6E4D9A1BBB089500C21833 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,20 +114,19 @@
 			path = Payloads;
 			sourceTree = "<group>";
 		};
-		3D6E4DC81BBB09BD00C21833 /* DTBonjour */ = {
+		3DEFAACE1BC855E6003BCAAE /* DTBonjour */ = {
 			isa = PBXGroup;
 			children = (
-				3D6E4DC91BBB09BD00C21833 /* DTBonjourDataChunk.h */,
-				3D6E4DCA1BBB09BD00C21833 /* DTBonjourDataChunk.m */,
-				3D6E4DCB1BBB09BD00C21833 /* DTBonjourDataConnection.h */,
-				3D6E4DCC1BBB09BD00C21833 /* DTBonjourDataConnection.m */,
-				3D6E4DCD1BBB09BD00C21833 /* DTBonjourServer.h */,
-				3D6E4DCE1BBB09BD00C21833 /* DTBonjourServer.m */,
-				3D6E4DCF1BBB09BD00C21833 /* NSScanner+DTBonjour.h */,
-				3D6E4DD01BBB09BD00C21833 /* NSScanner+DTBonjour.m */,
+				3DEFAACF1BC855E6003BCAAE /* DTBonjourDataChunk.h */,
+				3DEFAAD01BC855E6003BCAAE /* DTBonjourDataChunk.m */,
+				3DEFAAD11BC855E6003BCAAE /* DTBonjourDataConnection.h */,
+				3DEFAAD21BC855E6003BCAAE /* DTBonjourDataConnection.m */,
+				3DEFAAD31BC855E6003BCAAE /* DTBonjourServer.h */,
+				3DEFAAD41BC855E6003BCAAE /* DTBonjourServer.m */,
+				3DEFAAD51BC855E6003BCAAE /* NSScanner+DTBonjour.h */,
+				3DEFAAD61BC855E6003BCAAE /* NSScanner+DTBonjour.m */,
 			);
-			name = DTBonjour;
-			path = Payloads/DTBonjour;
+			path = DTBonjour;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,13 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6E4DA41BBB089500C21833 /* ViewController.m in Sources */,
-				3D6E4DD11BBB09BD00C21833 /* DTBonjourDataChunk.m in Sources */,
-				3D6E4DD41BBB09BD00C21833 /* NSScanner+DTBonjour.m in Sources */,
+				3DEFAAD91BC855E6003BCAAE /* DTBonjourServer.m in Sources */,
+				3DEFAAD81BC855E6003BCAAE /* DTBonjourDataConnection.m in Sources */,
 				3D6E4DA11BBB089500C21833 /* AppDelegate.m in Sources */,
 				3D6E4D9E1BBB089500C21833 /* main.m in Sources */,
-				3D6E4DD31BBB09BD00C21833 /* DTBonjourServer.m in Sources */,
+				3DEFAADA1BC855E6003BCAAE /* NSScanner+DTBonjour.m in Sources */,
 				3D6E4DD71BBB09F300C21833 /* BELBonjourServer.m in Sources */,
-				3D6E4DD21BBB09BD00C21833 /* DTBonjourDataConnection.m in Sources */,
+				3DEFAAD71BC855E6003BCAAE /* DTBonjourDataChunk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
