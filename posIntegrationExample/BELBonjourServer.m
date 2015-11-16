@@ -11,7 +11,7 @@
 @import UIKit;
 
 @interface BELBonjourServer ()
-@property (nonatomic, copy) DTBonjourDataConnection *currentConnection;
+@property (nonatomic, strong) DTBonjourDataConnection *currentConnection;
 @end
 
 @implementation BELBonjourServer
