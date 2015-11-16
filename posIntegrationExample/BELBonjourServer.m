@@ -11,7 +11,7 @@
 @import UIKit;
 
 @interface BELBonjourServer ()
-@property (nonatomic, copy) NSArray<DTBonjourDataConnection *> *approvedConnections;
+@property (nonatomic, strong) DTBonjourDataConnection *currentConnection;
 @end
 
 @implementation BELBonjourServer
@@ -19,17 +19,13 @@
 - (instancetype)initWithDisplayCode:(NSString *)displayCode {
     // this string is the unique identifier for our merchant app
     NSString *bonjourType = [NSString stringWithFormat:@"_bellypos_display_%@._tcp", displayCode];
-    self = [super initWithBonjourType:bonjourType];
-    if (self) {
-        _approvedConnections = @[];
-    }
-    return self;
+    return [super initWithBonjourType:bonjourType];
 }
 
 - (void)connection:(DTBonjourDataConnection *)connection didReceiveObject:(id)object {
     NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:object options:0 error:nil];
 
-    if ([self.approvedConnections containsObject:connection]) {
+    if ([self.currentConnection isEqual:connection]) {
         [self receivedPayload:jsonObject];
     } else {
         // if the sender is not already approved this should be a pairing request
@@ -41,10 +37,6 @@
 }
 
 - (void)connection:(DTBonjourDataConnection *)connection receivedPairingRequest:(NSDictionary *)pairingRequest {
-    if ([self.approvedConnections containsObject:connection]) {
-        // already added this connection
-        return;
-    }
     NSString *deviceID = pairingRequest[@"deviceIdentifier"];
     NSString *deviceName = pairingRequest[@"deviceName"];
     NSString *message = [NSString stringWithFormat:@"A %@ named %@ wants to connect with you.", deviceName, deviceID];
@@ -54,7 +46,7 @@
                                delegate:nil
                       cancelButtonTitle:@"OK"
                       otherButtonTitles:nil] show];
-    self.approvedConnections = [self.approvedConnections arrayByAddingObject:connection];
+    self.currentConnection = connection;
     // if the user denied the connection in production
     // you would say [connection close] and wait for the next request
 
@@ -83,12 +75,9 @@
 
 - (BOOL)sendPayload:(NSDictionary *)payload {
     NSError *error;
-    BOOL success = YES;
-    for (DTBonjourDataConnection *connection in self.approvedConnections) {
-        success = success && [connection sendObject:payload error:&error];
-        if (!success) {
-            NSLog(@"ERROR SENDING PAYLOAD!/n%@", error);
-        }
+    BOOL success = [self.currentConnection sendObject:payload error:&error];
+    if (!success) {
+        NSLog(@"ERROR SENDING PAYLOAD!/n%@", error);
     }
     return success;
 }
