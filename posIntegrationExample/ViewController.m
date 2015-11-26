@@ -56,10 +56,9 @@
                                @"loyalty_value" : @0,
                                @"quantity" : @1,
                                @"sequence" : @"2",
-                               @"sale_product_original_price" : @"400.0",
-                               @"handle" : @"precisionproduct",
-                               @"sale_product_discount" : @"",
-                               @"sale_product_new_price" : @"400.0",
+                               @"sale_product_original_price" : @400.0,
+                               @"sale_product_discount" : @0,
+                               @"sale_product_new_price" : @400.0,
                                @"variants_string" : @"",
                                @"name" : @"precision product",
                                };
