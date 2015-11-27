@@ -70,7 +70,11 @@
 }
 
 - (void)receivedPayload:(NSDictionary *)payload {
-    NSLog(@"received payload/n%@", payload);
+    [[[UIAlertView alloc] initWithTitle:@"received payload!"
+                                message:[NSString stringWithFormat:@"%@", payload]
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
 }
 
 - (BOOL)sendPayload:(NSDictionary *)payload {
