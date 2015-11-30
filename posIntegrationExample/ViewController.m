@@ -36,7 +36,6 @@
 - (IBAction)tappedResetSaleButton:(id)sender {
     // tap this to start and restart a sale
     [self resetCurrentSale];
-    [self updateClient];
 }
 
 - (IBAction)tappedCloseConnectionButton:(id)sender {
@@ -50,6 +49,9 @@
 }
 
 - (void)addItemToSale {
+    if (!self.currentSale) {
+        [self defaultSale];
+    }
     NSArray *currentListOfSaleItems = self.currentSale[@"sale"][@"register_sale_products"];
 
     NSDictionary *someItem = @{
@@ -69,7 +71,7 @@
                          };
 }
 
-- (void)resetCurrentSale {
+- (void)defaultSale {
     self.currentSale = @{
                          @"sale" : @{
                                  @"id" : @"some-uuid-for-this-sale",
@@ -100,6 +102,12 @@
                                  @"recipient_email" : @""
                                  }
                          };
+
+}
+
+- (void)resetCurrentSale {
+    [self.bonjourServer sendPayload:@{@"sale" : @{}}];
+    self.currentSale = nil;
 }
 
 @end
