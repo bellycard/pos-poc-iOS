@@ -9,9 +9,14 @@
 #import "ViewController.h"
 #import "BELBonjourServer.h"
 
+#import "BELSale.h"
+#import "BELSaleItem.h"
+
 @interface ViewController ()
+
 @property (nonatomic, strong) BELBonjourServer *bonjourServer;
-@property (nonatomic, copy) NSDictionary *currentSale;
+@property (nonatomic, strong) BELSale *currentSale;
+
 @end
 
 @implementation ViewController
@@ -23,91 +28,61 @@
     if (!couldStart) {
         NSLog(@"very bad!");
     }
-    [self resetCurrentSale];
+    self.currentSale = [BELSale new];
 }
 
 #pragma mark - Actions
 
-- (IBAction)tappedAddItemButton:(id)sender {
-    [self addItemToSale];
+- (IBAction)tappedResetSaleButton:(id)sender {
+    // tap this to start and restart a sale
+    self.currentSale = [BELSale new];
     [self updateClient];
 }
 
-- (IBAction)tappedResetSaleButton:(id)sender {
-    // tap this to start and restart a sale
-    [self resetCurrentSale];
+- (IBAction)tappedVeggiePizza:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@12.99 discount:@0 name:@"Veggie Pizza"]];
+    [self updateClient];
 }
 
-- (IBAction)tappedCloseConnectionButton:(id)sender {
-    [self.bonjourServer stop];
+- (IBAction)tappedMeatPizza:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@12.99 discount:@0 name:@"Meat Pizza"]];
+    [self updateClient];
+}
+
+- (IBAction)tappedSupremoPizza:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@8.99 discount:@0 name:@"Supremo Pizza"]];
+    [self updateClient];
+}
+
+- (IBAction)tappedAlfredo:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@8.99 discount:@0 name:@"Chicken Alfredo"]];
+    [self updateClient];
+}
+
+- (IBAction)tappedCheeseSticks:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@4.99 discount:@1 name:@"Cheese Sticks"]];
+    [self updateClient];
+}
+
+- (IBAction)tappedCrystalPepsi:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@1.38 discount:@0.5 name:@"Crystal Pepsi"]];
+    [self updateClient];
+}
+
+- (IBAction)tappedSierraMist:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@1.38 discount:@0 name:@"Sierra Mist"]];
+    [self updateClient];
+}
+
+- (IBAction)tappedSupremePizza:(id)sender {
+    [self.currentSale addItem:[[BELSaleItem alloc] initWithPrice:@14.99 discount:@0 name:@"Supreme Pizza"]];
+    [self updateClient];
 }
 
 #pragma mark - Utilities
 
 - (void)updateClient {
-    [self.bonjourServer sendPayload:self.currentSale];
-}
-
-- (void)addItemToSale {
-    if (!self.currentSale) {
-        [self defaultSale];
-    }
-    NSArray *currentListOfSaleItems = self.currentSale[@"sale"][@"register_sale_products"];
-
-    NSDictionary *someItem = @{
-                               @"loyalty_value" : @0,
-                               @"quantity" : @1,
-                               @"sequence" : @"2",
-                               @"sale_product_original_price" : @400.0,
-                               @"sale_product_discount" : @0,
-                               @"sale_product_new_price" : @400.0,
-                               @"variants_string" : @"",
-                               @"name" : @"precision product",
-                               };
-    NSMutableDictionary *mutableCurrentSale = [self.currentSale[@"sale"] mutableCopy];
-    mutableCurrentSale[@"register_sale_products"] = [currentListOfSaleItems arrayByAddingObject:someItem];
-    self.currentSale = @{
-                         @"sale" : [mutableCurrentSale copy],
-                         };
-}
-
-- (void)defaultSale {
-    self.currentSale = @{
-                         @"sale" : @{
-                                 @"id" : @"some-uuid-for-this-sale",
-                                 @"sale_discount" : @"",
-                                 @"register_sale_products" : @[
-
-                                         ],
-                                 @"total" : @2.37,
-                                 @"balance" : @2.37,
-                                 @"sale_discount_amount" : @0,
-                                 @"subtotal" : @2.06,
-                                 @"total_tax" : @0.31,
-                                 @"taxes" : @[
-                                         @{
-                                             @"id" : @"some uuid for a tax",
-                                             @"removable" : @YES,
-                                             @"name" : @"New Tax",
-                                             @"total" : @0.35,
-                                             @"rate" : @0.15,
-                                             }
-                                         ],
-                                 @"sendReceipt" : @0,
-                                 @"register_sale_payments" : @[
-
-                                         ],
-                                 @"payment_total" : @0,
-                                 @"status" : @"OPEN",
-                                 @"recipient_email" : @""
-                                 }
-                         };
-
-}
-
-- (void)resetCurrentSale {
-    [self.bonjourServer sendPayload:@{@"sale" : @{}}];
-    self.currentSale = nil;
+    [self.bonjourServer sendPayload:self.currentSale.foundationRepresentation];
 }
 
 @end
