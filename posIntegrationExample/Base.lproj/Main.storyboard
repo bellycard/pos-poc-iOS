@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,42 +17,100 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5J-9h-cvy">
-                                <rect key="frame" x="235" y="68" width="129" height="40"/>
-                                <animations/>
+                                <rect key="frame" x="236" y="28" width="129" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="RESET SALE"/>
                                 <connections>
                                     <action selector="tappedResetSaleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfm-or-qSH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttr-EV-vWN">
-                                <rect key="frame" x="229" y="151" width="142" height="40"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="ADD AN ITEM"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHK-zl-2oZ">
+                                <rect key="frame" x="241" y="76" width="119" height="30"/>
+                                <state key="normal" title="Add Veggie Pizza"/>
                                 <connections>
-                                    <action selector="tappedAddItemButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CK1-Tk-C3k"/>
+                                    <action selector="tappedVeggiePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TnO-wH-2Om"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-uA-8VM">
-                                <rect key="frame" x="113" y="258" width="374" height="41"/>
-                                <animations/>
-                                <string key="text">In the Belly Merchant app log in as an admin and 
-attempt to pair with the code 1928</string>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb7-FN-pTR">
+                                <rect key="frame" x="247" y="114" width="107" height="30"/>
+                                <state key="normal" title="Add Meat Pizza"/>
+                                <connections>
+                                    <action selector="tappedMeatPizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGV-OO-NQS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na6-VB-dda">
+                                <rect key="frame" x="233" y="152" width="134" height="30"/>
+                                <state key="normal" title="Add Supremo Pizza"/>
+                                <connections>
+                                    <action selector="tappedSupremoPizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2h-8l-0an"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diu-es-7XW">
+                                <rect key="frame" x="230" y="190" width="141" height="30"/>
+                                <state key="normal" title="Add Chicken Alfredo"/>
+                                <connections>
+                                    <action selector="tappedAlfredo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ce-F4-eER"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATY-kR-eFH">
+                                <rect key="frame" x="188" y="228" width="225" height="30"/>
+                                <state key="normal" title="Add Cheese Sticks with discount"/>
+                                <connections>
+                                    <action selector="tappedCheeseSticks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="APi-P6-5xS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-lJ-ThZ">
+                                <rect key="frame" x="192" y="266" width="217" height="30"/>
+                                <state key="normal" title="Add Crystal Pepsi with discount"/>
+                                <connections>
+                                    <action selector="tappedCrystalPepsi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jx5-DG-4Ba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1p-Yo-hX1">
+                                <rect key="frame" x="248" y="304" width="105" height="30"/>
+                                <state key="normal" title="Add Sierra Mist"/>
+                                <connections>
+                                    <action selector="tappedSierraMist:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Qc-VR-nJ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY0-Sd-KPQ">
+                                <rect key="frame" x="185" y="342" width="230" height="30"/>
+                                <state key="normal" title="Add Supreme Pizza with discount"/>
+                                <connections>
+                                    <action selector="tappedSupremePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CqN-hZ-Rjj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the Belly Merchant app log in as an admin. Find the Pair with POS button and attempt to pair with the code 1928." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-uA-8VM">
+                                <rect key="frame" x="0.0" y="380" width="600" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="o5J-9h-cvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4le-Z5-KhO"/>
-                            <constraint firstItem="gVx-uA-8VM" firstAttribute="top" secondItem="ttr-EV-vWN" secondAttribute="bottom" constant="67" id="HvU-FM-X6Y"/>
-                            <constraint firstItem="ttr-EV-vWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IfL-PF-5oN"/>
-                            <constraint firstItem="gVx-uA-8VM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SYs-7h-dUZ"/>
-                            <constraint firstItem="ttr-EV-vWN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="XHz-m2-OhC"/>
-                            <constraint firstItem="o5J-9h-cvy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="ifB-AM-1vA"/>
+                            <constraint firstItem="na6-VB-dda" firstAttribute="top" secondItem="cb7-FN-pTR" secondAttribute="bottom" constant="8" symbolic="YES" id="1AJ-Ly-6XE"/>
+                            <constraint firstItem="diu-es-7XW" firstAttribute="centerX" secondItem="ATY-kR-eFH" secondAttribute="centerX" id="5dt-vK-aKU"/>
+                            <constraint firstItem="d1p-Yo-hX1" firstAttribute="top" secondItem="cdK-lJ-ThZ" secondAttribute="bottom" constant="8" symbolic="YES" id="G5g-w5-wQU"/>
+                            <constraint firstItem="diu-es-7XW" firstAttribute="centerX" secondItem="na6-VB-dda" secondAttribute="centerX" id="OTt-vn-Fb8"/>
+                            <constraint firstItem="o5J-9h-cvy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QSI-FX-7ko"/>
+                            <constraint firstItem="gVx-uA-8VM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QuO-aF-6Zr"/>
+                            <constraint firstItem="cb7-FN-pTR" firstAttribute="top" secondItem="ZHK-zl-2oZ" secondAttribute="bottom" constant="8" symbolic="YES" id="V73-1X-RxZ"/>
+                            <constraint firstItem="gVx-uA-8VM" firstAttribute="top" secondItem="oY0-Sd-KPQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Wd3-HP-hu3"/>
+                            <constraint firstItem="oY0-Sd-KPQ" firstAttribute="top" secondItem="d1p-Yo-hX1" secondAttribute="bottom" constant="8" symbolic="YES" id="WhP-MY-02n"/>
+                            <constraint firstItem="na6-VB-dda" firstAttribute="centerX" secondItem="cb7-FN-pTR" secondAttribute="centerX" id="ZAq-Cg-rdL"/>
+                            <constraint firstAttribute="trailing" secondItem="gVx-uA-8VM" secondAttribute="trailing" id="bRu-Ad-Afv"/>
+                            <constraint firstItem="cdK-lJ-ThZ" firstAttribute="top" secondItem="ATY-kR-eFH" secondAttribute="bottom" constant="8" symbolic="YES" id="c6g-ho-Niu"/>
+                            <constraint firstItem="ZHK-zl-2oZ" firstAttribute="centerX" secondItem="o5J-9h-cvy" secondAttribute="centerX" id="cX5-Ep-snF"/>
+                            <constraint firstItem="ZHK-zl-2oZ" firstAttribute="top" secondItem="o5J-9h-cvy" secondAttribute="bottom" constant="8" symbolic="YES" id="dQF-Ag-toT"/>
+                            <constraint firstItem="diu-es-7XW" firstAttribute="top" secondItem="na6-VB-dda" secondAttribute="bottom" constant="8" symbolic="YES" id="e6n-o0-IU6"/>
+                            <constraint firstItem="cdK-lJ-ThZ" firstAttribute="centerX" secondItem="ATY-kR-eFH" secondAttribute="centerX" id="eq6-nM-0Q2"/>
+                            <constraint firstItem="ATY-kR-eFH" firstAttribute="top" secondItem="diu-es-7XW" secondAttribute="bottom" constant="8" symbolic="YES" id="jar-51-67Z"/>
+                            <constraint firstItem="d1p-Yo-hX1" firstAttribute="centerX" secondItem="cdK-lJ-ThZ" secondAttribute="centerX" id="lPA-gu-PIa"/>
+                            <constraint firstItem="d1p-Yo-hX1" firstAttribute="centerX" secondItem="oY0-Sd-KPQ" secondAttribute="centerX" id="rgK-fl-cLp"/>
+                            <constraint firstItem="gVx-uA-8VM" firstAttribute="centerX" secondItem="oY0-Sd-KPQ" secondAttribute="centerX" id="tdp-60-MLX"/>
+                            <constraint firstItem="ZHK-zl-2oZ" firstAttribute="centerX" secondItem="cb7-FN-pTR" secondAttribute="centerX" id="u09-Mo-mF0"/>
+                            <constraint firstItem="na6-VB-dda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yPG-pD-375"/>
                         </constraints>
                     </view>
                 </viewController>

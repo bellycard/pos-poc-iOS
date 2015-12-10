@@ -7,23 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D30F2621C1876EA00D5F614 /* BELSale.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D30F2611C1876EA00D5F614 /* BELSale.m */; };
+		3D30F2681C18771500D5F614 /* BELSaleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D30F2671C18771500D5F614 /* BELSaleItem.m */; };
 		3D6E4D9E1BBB089500C21833 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4D9D1BBB089500C21833 /* main.m */; };
 		3D6E4DA11BBB089500C21833 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DA01BBB089500C21833 /* AppDelegate.m */; };
 		3D6E4DA41BBB089500C21833 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DA31BBB089500C21833 /* ViewController.m */; };
 		3D6E4DA71BBB089500C21833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DA51BBB089500C21833 /* Main.storyboard */; };
 		3D6E4DA91BBB089500C21833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DA81BBB089500C21833 /* Assets.xcassets */; };
 		3D6E4DAC1BBB089500C21833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DAA1BBB089500C21833 /* LaunchScreen.storyboard */; };
-		3D6E4DC41BBB08DF00C21833 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC01BBB08DF00C21833 /* config.json */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DC61BBB08DF00C21833 /* pairing.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC21BBB08DF00C21833 /* pairing.json */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DC71BBB08DF00C21833 /* sale.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC31BBB08DF00C21833 /* sale.json */; settings = {ASSET_TAGS = (); }; };
-		3D6E4DD71BBB09F300C21833 /* BELBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DD61BBB09F300C21833 /* BELBonjourServer.m */; settings = {ASSET_TAGS = (); }; };
-		3DEFAAD71BC855E6003BCAAE /* DTBonjourDataChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD01BC855E6003BCAAE /* DTBonjourDataChunk.m */; settings = {ASSET_TAGS = (); }; };
-		3DEFAAD81BC855E6003BCAAE /* DTBonjourDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD21BC855E6003BCAAE /* DTBonjourDataConnection.m */; settings = {ASSET_TAGS = (); }; };
-		3DEFAAD91BC855E6003BCAAE /* DTBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD41BC855E6003BCAAE /* DTBonjourServer.m */; settings = {ASSET_TAGS = (); }; };
-		3DEFAADA1BC855E6003BCAAE /* NSScanner+DTBonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD61BC855E6003BCAAE /* NSScanner+DTBonjour.m */; settings = {ASSET_TAGS = (); }; };
+		3D6E4DC41BBB08DF00C21833 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC01BBB08DF00C21833 /* config.json */; };
+		3D6E4DC61BBB08DF00C21833 /* pairing.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC21BBB08DF00C21833 /* pairing.json */; };
+		3D6E4DC71BBB08DF00C21833 /* sale.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E4DC31BBB08DF00C21833 /* sale.json */; };
+		3D6E4DD71BBB09F300C21833 /* BELBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E4DD61BBB09F300C21833 /* BELBonjourServer.m */; };
+		3DEFAAD71BC855E6003BCAAE /* DTBonjourDataChunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD01BC855E6003BCAAE /* DTBonjourDataChunk.m */; };
+		3DEFAAD81BC855E6003BCAAE /* DTBonjourDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD21BC855E6003BCAAE /* DTBonjourDataConnection.m */; };
+		3DEFAAD91BC855E6003BCAAE /* DTBonjourServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD41BC855E6003BCAAE /* DTBonjourServer.m */; };
+		3DEFAADA1BC855E6003BCAAE /* NSScanner+DTBonjour.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFAAD61BC855E6003BCAAE /* NSScanner+DTBonjour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D30F2601C1876EA00D5F614 /* BELSale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELSale.h; sourceTree = "<group>"; };
+		3D30F2611C1876EA00D5F614 /* BELSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BELSale.m; sourceTree = "<group>"; };
+		3D30F2661C18771500D5F614 /* BELSaleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BELSaleItem.h; sourceTree = "<group>"; };
+		3D30F2671C18771500D5F614 /* BELSaleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BELSaleItem.m; sourceTree = "<group>"; };
+		3D30F2691C18778D00D5F614 /* BELPOSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BELPOSModel.h; sourceTree = "<group>"; };
 		3D6E4D991BBB089500C21833 /* posIntegrationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = posIntegrationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6E4D9D1BBB089500C21833 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3D6E4D9F1BBB089500C21833 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +67,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D30F25C1C1876C400D5F614 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D30F2691C18778D00D5F614 /* BELPOSModel.h */,
+				3D30F2601C1876EA00D5F614 /* BELSale.h */,
+				3D30F2611C1876EA00D5F614 /* BELSale.m */,
+				3D30F2661C18771500D5F614 /* BELSaleItem.h */,
+				3D30F2671C18771500D5F614 /* BELSaleItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3D6E4D901BBB089500C21833 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,7 @@
 				3D6E4DA31BBB089500C21833 /* ViewController.m */,
 				3D6E4DD51BBB09F300C21833 /* BELBonjourServer.h */,
 				3D6E4DD61BBB09F300C21833 /* BELBonjourServer.m */,
+				3D30F25C1C1876C400D5F614 /* Models */,
 				3D6E4DA51BBB089500C21833 /* Main.storyboard */,
 				3D6E4DA81BBB089500C21833 /* Assets.xcassets */,
 				3D6E4DAA1BBB089500C21833 /* LaunchScreen.storyboard */,
@@ -160,6 +180,7 @@
 				TargetAttributes = {
 					3D6E4D981BBB089500C21833 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = D4DCRCY4V2;
 					};
 				};
 			};
@@ -205,10 +226,12 @@
 				3D6E4DA41BBB089500C21833 /* ViewController.m in Sources */,
 				3DEFAAD91BC855E6003BCAAE /* DTBonjourServer.m in Sources */,
 				3DEFAAD81BC855E6003BCAAE /* DTBonjourDataConnection.m in Sources */,
+				3D30F2681C18771500D5F614 /* BELSaleItem.m in Sources */,
 				3D6E4DA11BBB089500C21833 /* AppDelegate.m in Sources */,
 				3D6E4D9E1BBB089500C21833 /* main.m in Sources */,
 				3DEFAADA1BC855E6003BCAAE /* NSScanner+DTBonjour.m in Sources */,
 				3D6E4DD71BBB09F300C21833 /* BELBonjourServer.m in Sources */,
+				3D30F2621C1876EA00D5F614 /* BELSale.m in Sources */,
 				3DEFAAD71BC855E6003BCAAE /* DTBonjourDataChunk.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = posIntegrationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bellycard.posIntegrationExample;
@@ -332,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = posIntegrationExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bellycard.posIntegrationExample;
